@@ -2,14 +2,15 @@
 
 #include <cute/tensor.hpp>
 
+extern "C"
 __global__
 void
 test_kernel() {
-    using namespace cute;
+    // using namespace cute;
 
-    auto sA = make_shape(10,100);
-    print(sA);
-    printf("dogs\n");
+    // auto sA = make_shape(10,100);
+    // print(sA);
+    // printf("dogs\n");
 }
 
 int

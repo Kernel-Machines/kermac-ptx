@@ -17,7 +17,7 @@ foreach(CUDA_FILE ${CUDA_SOURCE_FILES})
         COMMAND nvcc -ptx 
             ${CMAKE_SOURCE_DIR}/${CUDA_FILE} 
             -o ${PTX_OUTPUT} 
-            -arch=compute_80 
+            -arch=compute_89 
             -I${CMAKE_SOURCE_DIR}/thirdparty/cutlass/include
         DEPENDS ${CUDA_FILE}
         COMMENT "Generating PTX for ${CUDA_FILE}"
